@@ -29,15 +29,15 @@ def showWhatWasGenerated():
   print(loot) # proof that random loot was generated
   print(encounters) #proog that random encounters were generated
 
-def showBoard(b):
-  print(b)
+def showGame(g):
+  print(g)
 
-def makeBoard(m,l,e):
-  b = numpy.vstack([m, l, e])
-  return b
+def generateGame(m,l,e):
+  g = numpy.vstack([m, l, e])
+  return g
   
 map = generateLayout(room_bank) #generate the map
 loot = generateLayout(loot_bank)  #generate the loot
 encounters = generateLayout(encounters_bank)  #generate the encounters
-board = makeBoard(map, loot, encounters)  #place the map, loot and encoutner arrays on the board
-showBoard(board)  #show the board
+game = generateGame(map, loot, encounters)  #generate the game
+showGame(game)  #show the game
