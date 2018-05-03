@@ -27,7 +27,7 @@ def generateLayout(someBank):
 def showWhatWasGenerated():
   print(map)  #proof that random map was generated
   print(loot) # proof that random loot was generated
-  print(encounters) #proog that random encounters were generated
+  print(encounters) #proof that random encounters were generated
 
 def showGame(g):
   print(g)
